@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bgcolor: #fff9e8;
+  --span: rgba(253, 178, 217, 0.6);
+  --btn: rgba(253, 178, 217, 0.7);
+  --outline: #b95f89;
+  --boxShadow: rgba(138, 43, 226, 0.7);
+}
+
+body {
+  background-color: rgba(232, 191, 177, 0.5);
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  transform: translateY(20px);
+}
+
+.container div {
+  width: 260px;
+  height: 450px;
+  border: 2px solid var(--outline);
+  background-color: #fff9e8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 8px 8px var(--boxShadow);
+}
+div span {
+  background-color: var(--span);
+  color: black;
+  padding: 5px 8px;
+  font-weight: 700;
+  font-size: small;
+  border-radius: 6px;
+}
+button {
+  padding: 16px 32px;
+  width: 250px;
+  height: 40px;
+  border: 1px solid var(--btn);
+  border-radius: 30px;
+  background-color: var(--btn);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: small;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 4px var(--boxShadow);
+  letter-spacing: 7px;
+}
+.terms-and-conditions {
+  font-size: x-small;
+  font-weight: 400;
+}
+
+ul {
+  transform: translateY(-5px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+ul li {
+  font-size: small;
+  font-weight: 400;
+  padding-top: 5px;
+}
+h1,
+h1 + p:first-of-type {
+  text-align: center;
+}
+
+.payment-options img {
+  width: 30px;
+  height: 30px;
+}
+.payment-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+h3 {
+  font-size: x-large;
+  font-weight: 700;
+}
+.container div p:first-of-type {
+  font-size: medium;
+  font-weight: 500;
+  transform: translateY(-15px);
+}
+.container div p:nth-of-type(2) {
+  font-size: medium;
+  font-weight: 400;
+  transform: translateY(-15px);
+}
+
+hr {
+  transform: translateY(-10px);
+  border-color: var(--boxShadow);
+}
+
+/* button and terms-and-condition positioning */
+.container .individual > button {
+  transform: translateY(70px);
+}
+.container .individual > .terms-and-conditions {
+  transform: translateY(100px);
+}
+.container .duo > button {
+  transform: translateY(60px);
+}
+.container .duo > .terms-and-conditions {
+  transform: translateY(85px);
+}
+.container .family > button {
+  transform: translateY(2px);
+}
+.container .family > .terms-and-conditions {
+  transform: translateY(25px);
+}
+.container .student > button {
+  transform: translateY(70px);
+}
+.container .student > .terms-and-conditions {
+  transform: translateY(90px);
+}

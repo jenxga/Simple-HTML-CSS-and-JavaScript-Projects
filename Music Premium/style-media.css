@@ -1,0 +1,212 @@
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(20px);
+    flex-wrap: wrap;
+  }
+  .container div {
+    flex: 0 0 250px;
+    height: 360px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  button {
+    padding: 16px 32px;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .container div p:nth-of-type(2) {
+    font-size: small;
+    font-weight: 300;
+    transform: translateY(-25px);
+  }
+
+  ul {
+    transform: translateY(-30px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  ul li {
+    font-size: small;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: left;
+  }
+  hr {
+    transform: translateY(-25px);
+  }
+  .container .individual > button {
+    transform: translateY(15px);
+  }
+  .container .individual > .terms-and-conditions {
+    transform: translateY(35px);
+  }
+  .container .duo > button {
+    transform: translateY(10px);
+  }
+  .container .duo > .terms-and-conditions {
+    transform: translateY(40px);
+  }
+  .container .family > button {
+    transform: translateY(-15px);
+  }
+  .container .family > .terms-and-conditions {
+    transform: translateY(-15px);
+  }
+  .container .student > button {
+    transform: translateY(30px);
+  }
+  .container .student > .terms-and-conditions {
+    transform: translateY(40px);
+  }
+  .terms-and-conditions {
+    text-align: justify;
+    font-size: x-small;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .container {
+    transform: translateY(20px);
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .container div {
+    width: 300px;
+    height: 450px;
+    margin-top: 20px;
+  }
+  .container .individual,
+  .container .duo {
+    height: 350px;
+  }
+  button {
+    padding: 16px 32px;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .container div p:nth-of-type(2) {
+    font-size: medium;
+    font-weight: 400;
+    transform: translateY(-25px);
+  }
+
+  ul {
+    transform: translateY(-30px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  ul li {
+    font-size: medium;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: left;
+    transform: translateY(10px);
+  }
+  hr {
+    transform: translateY(-25px);
+  }
+  .container .individual > button {
+    transform: translateY(15px);
+  }
+  .container .individual > .terms-and-conditions {
+    transform: translateY(20px);
+  }
+  .container .duo > button {
+    transform: translateY(5px);
+  }
+  .container .duo > .terms-and-conditions {
+    transform: translateY(10px);
+  }
+  .container .family > button {
+    transform: translateY(-5px);
+  }
+  .container .family > .terms-and-conditions {
+    transform: translateY(30px);
+  }
+  .container .student > button {
+    transform: translateY(80px);
+  }
+  .container .student > .terms-and-conditions {
+    transform: translateY(90px);
+  }
+  .terms-and-conditions {
+    text-align: justify;
+    font-size: x-small;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    transform: translateY(-150px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    margin: 0 auto;
+    transform: translateY(10px);
+  }
+  .container div {
+    position: static;
+    width: 250px;
+    height: 500px;
+    /* flex: 0 0 250px; */
+    /* margin-top: 20px; */
+  }
+  button {
+    margin: 0 auto;
+    width: 250px;
+  }
+  ul li {
+    font-size: medium;
+    font-weight: 400;
+    padding-top: 10px;
+    text-align: left;
+    transform: translateY(-20px);
+  }
+  hr {
+    transform: translateY(-15px);
+  }
+  .container .individual > button {
+    transform: translateY(75px);
+  }
+  .container .individual > .terms-and-conditions {
+    transform: translateY(90px);
+  }
+  .container .duo > button {
+    transform: translateY(85px);
+  }
+  .container .duo > .terms-and-conditions {
+    transform: translateY(100px);
+  }
+  .container .family > button {
+    transform: translateY(-10px);
+  }
+  .container .family > .terms-and-conditions {
+    transform: translateY(2px);
+  }
+  .container .student > button {
+    transform: translateY(95px);
+  }
+  .container .student > .terms-and-conditions {
+    transform: translateY(95px);
+  }
+  .terms-and-conditions {
+    text-align: justify;
+    font-size: x-small;
+    font-weight: 400;
+  }
+}
