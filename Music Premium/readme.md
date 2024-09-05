@@ -4,6 +4,10 @@
 
 ###
 
+Visit the link to view the project.
+
+## https://musicpremium.netlify.app/
+
 I recreated the pricing card of the most poular streaming platform.
 
 This is a responsive Pricing Card Page. Feel free to resize your browser to see the different layouts in different sizes.
