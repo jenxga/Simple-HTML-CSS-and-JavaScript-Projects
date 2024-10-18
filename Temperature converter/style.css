@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f1f3c2;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 120px;
+  gap: 20px;
+  max-width: 500px;
+  height: 320px;
+  border: 5px solid #cedf9f;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px #cedf9f;
+}
+.header {
+  margin-top: 5px;
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+}
+.temp-converter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+.temp-converter span {
+  margin-left: 25px;
+  width: 80px;
+  padding: 4px;
+  font-weight: 700;
+  font-size: medium;
+}
+.temp-converter input {
+  margin-left: 50px;
+  width: 250px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 3px solid #a1d6b2;
+  outline: none;
+  font-size: medium;
+  font-weight: 600;
+}
+.temp-converter input::placeholder {
+  font-size: large;
+  font-weight: 700;
+}
+button {
+  width: 400px;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: medium;
+  letter-spacing: 3px;
+  font-weight: 500;
+  border: 1px solid #a1d6b2;
+  background-color: #a1d6b2;
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight: 700;
+  border: 3px solid #a1d6b2;
+}
+
+@media screen and (max-width: 475px) {
+  .container {
+    margin-top: 10px;
+    max-height: 500px;
+    border: none;
+    box-shadow: none;
+    max-width: 400px;
+  }
+  button {
+    max-width: 250px;
+    padding: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .header {
+    text-align: center;
+  }
+}
